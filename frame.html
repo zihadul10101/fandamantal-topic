@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap ;*/problem*/
+            
+        }
+        .photo-frame{
+            width: 300px;
+            height: 200px;
+            border: 10px solid goldenrod;
+            border-radius: 10px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .photo-frame:hover .photo img{
+          transform: skew(9deg);
+          transition:transform 2s ;  
+        }
+ .photo-frame .photo img{ 
+    width: 100%;
+}/*Value=	Description	
+none=	Defines that there should be no transformation	
+matrix(n,n,n,n,n,n)	Defines a 2D transformation, using a matrix of six values	
+matrix3d
+(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)	Defines a 3D transformation, using a 4x4 matrix of 16 values	
+translate(x,y)=	Defines a 2D translation	
+translate3d(x,y,z)=	Defines a 3D translation	
+translateX(x)=	Defines a translation, using only the value for the X-axis	
+translateY(y)=	Defines a translation, using only the value for the Y-axis	
+translateZ(z)=	Defines a 3D translation, using only the value for the Z-axis	
+scale(x,y)=	Defines a 2D scale transformation	
+scale3d(x,y,z)=	Defines a 3D scale transformation	
+scaleX(x)=	Defines a scale transformation by giving a value for the X-axis	
+scaleY(y)=	Defines a scale transformation by giving a value for the Y-axis	
+scaleZ(z)=	Defines a 3D scale transformation by giving a value for the Z-axis	
+rotate(angle)=	Defines a 2D rotation, the angle is specified in the parameter	
+rotate3d(x,y,z,angle)=	Defines a 3D rotation	
+rotateX(angle)=	Defines a 3D rotation along the X-axis	
+rotateY(angle)=	Defines a 3D rotation along the Y-axis	
+rotateZ(angle)=	Defines a 3D rotation along the Z-axis	
+skew(x-angle,y-angle)	Defines a 2D skew transformation along the X- and the Y-axis	
+skewX(angle)=	Defines a 2D skew transformation along the X-axis	
+skewY(angle)=	Defines a 2D skew transformation along the Y-axis	
+perspective(n)=	Defines a perspective view for a 3D transformed element	
+initial	Sets this property to its default value. Read about initial	
+inherit	Inherits this property from its parent element. Read about inherit	
+*/
+.photo-detail{
+    position: absolute;
+    display: none;
+    width: 300px;
+            height: 200px;
+            top: 0;
+}
+.photo-frame:hover .photo-detail{
+     display: block; 
+    background-color: rgba(206, 147, 0, 0.795);
+    
+}
+.photo-frame:hover .photo-detail h3{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.photo-frame:hover .photo-detail{
+    color: blanchedalmond;
+}
+    </style>
+</head>
+<body>
+   <h3>
+   my photo book    
+   </h3> 
+   <section class="photo-album">
+<div class="photo-frame">
+    <div class="photo"><img src="tigers.jpg" alt=""></div>
+    <div class="photo-detail">
+        <h3>Royal Bengal Tiger</h3>
+        <p>
+            he tiger is among the most recognisable and popular of the world's charismatic megafauna. It featured prominently in ancient mythology and folklore and continues to be depicted in modern films 
+        </p>
+    </div>
+</div>
+<div class="photo-frame">
+    <div class="photo"><img src="tigers.jpg" alt=""></div>
+    <div class="photo-detail">
+        <h3>Royal Bengal Tiger</h3>
+        <p>
+            he tiger is among the most recognisable and popular of the world's charismatic megafauna. It featured prominently in ancient mythology and folklore and continues to be depicted in modern films 
+        </p>
+    </div>
+</div>
+<div class="photo-frame">
+    <div class="photo"><img src="tigers.jpg" alt=""></div>
+    <div class="photo-detail">
+        <h3>Royal Bengal Tiger</h3>
+        <p>
+            he tiger is among the most recognisable and popular of the world's charismatic megafauna. It featured prominently in ancient mythology and folklore and continues to be depicted in modern films 
+        </p>
+    </div>
+</div>
+<div class="photo-frame">
+    <div class="photo"><img src="tigers.jpg" alt=""></div>
+    <div class="photo-detail">
+        <h3>Royal Bengal Tiger</h3>
+        <p>
+            he tiger is among the most recognisable and popular of the world's charismatic megafauna. It featured prominently in ancient mythology and folklore and continues to be depicted in modern films 
+        </p>
+    </div>
+</div>
+<div class="photo-frame">
+    <div class="photo"><img src="tigers.jpg" alt=""></div>
+    <div class="photo-detail">
+        <h3>Royal Bengal Tiger</h3>
+        <p>
+            he tiger is among the most recognisable and popular of the world's charismatic megafauna. It featured prominently in ancient mythology and folklore and continues to be depicted in modern films 
+        </p>
+    </div>
+</div>
+   </section>
+</body>
+</html>
